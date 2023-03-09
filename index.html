@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biler</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <style>
+        .vehicle {
+            display: none;
+        }
+
+        #carHeader {
+            display: none;
+        }
+
+        #bikeHeader {
+            display: none;
+        }
+
+        #motorcycleHeader {
+            display: none;
+        }
+      </style>
+  
+  
+    <div id="inputContainer">
+        <select id="cases">
+            <option value=""> Select a vehicle... </option>
+            <option value="car">Create car</option>
+            <option value="bike">Create bike</option>
+            <option value="motorcycle">Create motorcycle</option>
+        </select><br>
+
+        <div class="vehicle" id="car">
+            <input type="text" id="inputOne" placeholder="Model">
+
+            <input type="text" id="inputTwo" placeholder="Year">
+
+            <input type="text" id="inputThree" placeholder="Kilometers">
+
+            <input type="text" id="inputFour" placeholder="Color">
+
+            <input type="text" id="inputFive" placeholder="Price">
+
+            <input type="text" id="inputSix" placeholder="Horsepower">
+
+            <input type="text" id="inputSeven" placeholder="Photo">
+
+            <button onclick="getInputValuesOfCar()"> Create new car </button>
+        </div>
+
+        <div class="vehicle" id="bike">
+            <input type="text" id="bikeInputOne" placeholder="Model">
+
+            <input type="text" id="bikeInputTwo" placeholder="Year">
+
+            <input type="text" id="bikeInputThree" placeholder="Color">
+
+            <input type="text" id="bikeInputFour" placeholder="Price">
+
+            <input type="text" id="bikeInputFive" placeholder="Number of gears">
+
+            <input type="text" id="bikeInputSix" placeholder="Photo">
+
+            <button onclick="getInputValuesOfBike()"> Create new bike </button>
+        </div>
+
+        <div class="vehicle" id="motorcycle">
+            <input type="text" id="motorcycleInputOne" placeholder="Model">
+
+            <input type="text" id="motorcycleInputTwo" placeholder="Year">
+
+            <input type="text" id="motorcycleInputThree" placeholder="Kilometers">
+
+            <input type="text" id="motorcycleInputFour" placeholder="Color">
+
+            <input type="text" id="motorcycleInputFive" placeholder="Price">
+
+            <input type="text" id="motorcycleInputSix" placeholder="Photo">
+
+            <button onclick="getInputValuesOfMotorcycle()"> Create new motorcycle </button>
+        </div>
+    </div>
+    
+    <div id="carContainer">
+        <h1 id="carHeader"> Cars: </h1>
+
+    </div>
+
+    <div id="bikeContainer">
+        <h1 id="bikeHeader"> Bikes: </h1>
+
+    </div>
+
+    <div id="motorcycleContainer">
+        <h1 id="motorcycleHeader"> Motorcycle: </h1>
+
+    </div>
+    
+</body>
+</html>
